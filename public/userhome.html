@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Movies</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Playlists</h3>
+            </div>
+            <ul id="playlistList" class="playlist-list">
+                
+            </ul>
+            <form id="createPlaylistForm">
+                <input type="text" id="playlistName" placeholder="Playlist Name">
+                <button type="submit">Create Playlist</button>
+            </form>
+            <select id="playlistSelect">
+
+            </select>
+            <button id="addToPlaylistButton">Add to Playlist</button>
+            <div id="playlistContainer" class="playlist-container"></div>
+        </div>
+        <div class="content">
+            <header class="header">
+                <h1>User Home</h1>
+            </header>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Enter a movie title">
+                <button id="searchButton">Search</button>
+            </div>
+            <div id="resultsContainer" class="results-container"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
